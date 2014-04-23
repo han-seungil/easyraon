@@ -46,20 +46,34 @@
             <div class="tab-content">
                 <div class="tab-pane active" id="simple-pay">
                 <form class="form" role="form">
-      
-                    <div class="control-group">                        
-                        <label class="control-label" for="radios">인증수단</label>
-                        <div class="controls">
-                        <label class="radio-inline" for="radios-0">
-                            <input type="radio" name="radios" id="radios-0" value="SMS인증" checked="checked" required="required">
-                            SMS인증
-                        </label>
-                        <label class="radio-inline" for="radios-1">
-                            <input type="radio" name="radios" id="radios-1" value="앱카드인증" required="required">
-                            앱카드인증
-                        </label>
-                    </div>
-                    </div>
+                    <fieldset>
+                        <h4>귀하께서는 <span class="label label-info">{XXX}</span> 쇼핑몰에서 <span class="label label-info">{2,000,000}</span>원 결제요청을 하셨습니다.</h4>
+                        <div class="form-group">
+                            <label class="form-group">휴대전화</label>
+                            <div class="controls inline">
+                                <select class="form-control" id="select">
+                                    <option>SKT</option>
+                                    <option>KT</option>
+                                    <option>LG U+</option>
+                                </select>
+                                <input type="number">
+                                <input type="number">
+                            </div>
+                        </div>
+                        <div class="form-group">                        
+                            <label class="control-label" for="radios">인증수단</label>
+                            <div class="controls">
+                            <label class="radio-inline" for="radios-0">
+                                <input type="radio" name="radios" id="radios-0" value="SMS인증" checked="checked" required="required">
+                                SMS인증
+                            </label>
+                            <label class="radio-inline" for="radios-1">
+                                <input type="radio" name="radios" id="radios-1" value="앱카드인증" required="required">
+                                앱카드인증
+                            </label>
+                            </div>
+                        </div>
+                    </fieldset>
                 </form>
                 </div>
               <div class="tab-pane" id="secure-pay">profile....</div>
