@@ -1,0 +1,85 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="941" measuredH="584" mockupW="821" mockupH="566">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="120" y="18" w="420" h="566" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="163" y="40" w="138" h="-1" measuredW="54" measuredH="21" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13576743</color>
+        <text>ILK%20Card</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="334" y="40" w="138" h="-1" measuredW="139" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>2848996</color>
+        <italic>true</italic>
+        <text>Safe%20Payment%20Service</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::TabBar" x="136" y="74" w="383" h="495" measuredW="198" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%uAC04%uD3B8%uACB0%uC81C%2C%uC548%uC2EC%uD074%uB9AD</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::HRule" x="141" y="62" w="378" h="-1" measuredW="100" measuredH="10" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Paragraph" x="156" y="106" w="275" h="35" measuredW="275" measuredH="80" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%7Bcolor%3Ablue%7D%uD64D%uAE38%uB3D9%7Bcolor%7D%uB2D8%uAED8%uC11C%20%7Bcolor%3Ared%7DILK%20%uC1FC%uD551%uBAB0%7Bcolor%7D%uC5D0%uC11C%20%0A%7Bcolor%3Ared%7D3%2C100%2C000%7Bcolor%7D%uC6D0%uC744%20%uACB0%uC81C%20%uCC98%uB9AC%uD558%uACE0%20%uACC4%uC2ED%uB2C8%uB2E4.</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::HelpButton" x="454" y="169" w="-1" h="-1" measuredW="18" measuredH="18" zOrder="9" locked="false" isInGroup="-1"/>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Image" x="487" y="33" w="31" h="34" measuredW="225" measuredH="225" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/btn-setup.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Canvas" x="156" y="154" w="339" h="181" measuredW="100" measuredH="70" zOrder="7" locked="false" isInGroup="-1"/>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::TextInput" x="163" y="163" w="324" h="-1" measuredW="96" measuredH="30" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%uACB0%uC81C%uC815%uBCF4%20%uC870%uD68C</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Canvas" x="658" y="76" w="283" h="87" measuredW="100" measuredH="70" zOrder="10" locked="false" isInGroup="-1"/>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="693" y="226" w="-1" h="-1" measuredW="50" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>%uD734%uB300%uD3F0%uBC88%uD638</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::TextInput" x="747" y="247" w="104" h="-1" measuredW="88" measuredH="28" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>6710886</borderColor>
+        <color>16777215</color>
+        <size>14</size>
+        <text>0000-0000</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::NumericStepper" x="693" y="248" w="-1" h="-1" measuredW="56" measuredH="25" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>14</size>
+        <text>010</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Label" x="693" y="291" w="56" h="-1" measuredW="40" measuredH="21" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>%uC8FC%uBBFC%uBC88%uD638</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::TextInput" x="749" y="307" w="104" h="-1" measuredW="74" measuredH="28" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>6710886</borderColor>
+        <color>16777215</color>
+        <size>14</size>
+        <text>0000000</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Label" x="693" y="311" w="56" h="-1" measuredW="57" measuredH="22" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>14</size>
+        <text>000000-</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
