@@ -11,6 +11,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Optional theme -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/lib/countdown.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,15 +28,15 @@
         </div>
         <div class="panel-body">
             <div class="row">
-            <button type="button" class="btn btn-success col-xs-4" data-backdrop="false" data-toggle="modal" data-target="#vertical-layout">수직 라벨 배열</button>
-            <button type="button" class="btn btn-success col-xs-4" data-backdrop="false" data-toggle="modal" data-target="#horizontal-layout">수평 라벨 배열</button>
-            <button type="button" class="btn btn-success col-xs-4" data-backdrop="false" data-toggle="modal" data-target="#inline-layout">인라인 라벨 배열</button>
+            <button type="button" class="btn btn-success col-xs-4" data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target="#vertical-layout">수직 라벨 배열</button>
+            <button type="button" class="btn btn-success col-xs-4" data-backdrop="true" data-keyboard="false" data-toggle="modal" data-target="#horizontal-layout">수평 라벨 배열</button>
+            <button type="button" class="btn btn-success col-xs-4" data-backdrop="true" data-keyboard="false" data-toggle="modal" data-target="#inline-layout">인라인 라벨 배열</button>
             </div>
         </div>
     </div>
     </div>
     <!-- Starting  dialog of vertical label layout -->
-    <div class="modal fade" id="vertical-layout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade " id="vertical-layout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
     <div class="modal-content">
         <div class="modal-header" >
@@ -46,10 +47,11 @@
         <div class="modal-body">
             <div class="well">{XXX}님은 <span class="label label-info">{XXX}</span>
                 쇼핑몰에서 <span class="label label-info">{2,000,000}</span>원 간편결제요청을 하셨습니다<br>
-                <small>아래 결제 방법을 선택하고 승인 정보를 입력하세요.</small>
+                <small>다음 결제 방법을 선택하고 승인 정보를 입력하세요.</small>
             </div>
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs">
+            <div id="simple-pay-view">
+            <ul id="payment-view" class="nav nav-tabs" >
               <li class="active"><a href="#simple-pay" data-toggle="tab" >간편결제</a></li>
               <li><a href="#secure-pay" data-toggle="tab">안심결제</a></li>
               <li class="dropdown" style="float:right">
@@ -61,39 +63,26 @@
                 </ul>
               </li>
             </ul>
-
-            <!-- Tab panes -->
+            <!-- Start Tab panes -->
             <div class="tab-content">
                 <div class="tab-pane active" id="simple-pay">
                     <!-- start form -->
 
                     <form class="form" role="form">
                         <fieldset>
-                        <div class="row">
-                            <label for="sid2" class="control-label" style="margin-top:5px;">주민번호</label>
-                            <div class="input-group" style="margin-bottom:15px;">
-                            <span class="input-group-addon">YYMMDD</span>
-                                <span class="input-group-addon">-</span>
-                            <input type="password" class="form-control" id="sid2" placeholder="XXXXXXX(7자리 숫자)">
+                            <div class="row" style="margin-top:10px">
+                            <div class="form-group">
+                                <button id="reqSMS" type="button" class="btn btn-default">SMS 인증 &nbsp;<span class="glyphicon glyphicon-envelope"></span></button>
+                                <button id="reqApp" type="button" class="btn btn-default">앱카드 인증&nbsp;<span class="glyphicon glyphicon-phone"></span></button>
+                                <button id="reqApp" type="button" class="btn btn-default">안심클릭 인증&nbsp;<span class="glyphicon glyphicon-phone"></span></button>
                             </div>
                         </div>
-                        <div class="row" >
-                            <div class="form-group">
-                                <label class="col-lg-2 control-label">인증&nbsp;수단</label>
-                                <div class="col-lg-10">
-                                <div class="radio">
-                                <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                                SMS 인증
-                                </label><button>hu</button>
-                                </div>
-                                <div class="radio">
-                                <label>
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                 앱카드 인증
-                                </label>
-                                </div>
-                                </div>
+                        <div class="row">
+                            <label for="sid2" class="control-label" style="margin-top:5px;">주민번호</label>
+                            <div class="input-group" style="margin-bottom:15px;width:85%">
+                            <span class="input-group-addon">&nbsp;YYMMDD&nbsp;</span>
+                            <span class="input-group-addon">-</span>
+                            <input type="password" class="form-control" id="sid2" placeholder="XXXXXXX(7자리 숫자)">
                             </div>
                         </div>
                         <div class="row">
@@ -120,14 +109,41 @@
                             </div>
                             </div>
                         </div>
+
                         </fieldset>
                     </form>
+
+
                     <!-- end -->
                 </div>
                 <div class="tab-pane active" id="secure-pay">
                 </div>
             </div>
-
+            </div>
+            <!-- end tab pane -->
+            <!-- start SMS authentic -->
+            <div id="sms-authentic-view" style="display:none">
+                <div class="container">
+                <div class="row text-center">
+                    <label>휴대전화: 010-0000-0000 </label>
+                </div>
+                <div class="row text-center" style="margin-left:20px;margin-bottom:10px;">
+                    <div class="text-center" id="countdown-ctrl"></div>
+                </div>
+                <div class="row text-center">
+                    <div class="">
+                        <div class="input-group">
+                        <input type="text" class="form-control" placeholder="xxxxxx">
+                        <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">인증번호확인</button>
+                        <button class="btn btn-default" type="button">재전송</button>
+                        </span>
+                        </div><!-- /input-group -->
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- end SMS authentic -->
         </div>
         <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">취&nbsp;소</button>
@@ -147,7 +163,7 @@
             <h4 class="modal-title" id="myModalLabel">SK C&C 하나SK카드</h4>
         </div>
         <div class="modal-body">
-            HIHI
+            <!-- TODO:  horizontal type of layout -->
         </div>
         <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -167,7 +183,7 @@
             <h4 class="modal-title" id="myModalLabel">SK C&C 하나SK카드</h4>
         </div>
         <div class="modal-body">
-            HIHI
+            <!-- TODO: inline type of layout -->
         </div>
         <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -182,6 +198,10 @@
     <script src="js/jquery.min.1.11.0.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
+    <!-- Biz Logic -->
+    <script src="js/main.js"></script>
+    <!-- library -->
+    <script src="js/lib/jquery.countdown.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>
