@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Layout Sample</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/lib/countdown.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">레이아웃 예제</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <button type="button" class="btn btn-success col-xs-4" data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target="#vertical-layout">수직 라벨 배열</button>
+                    <button type="button" class="btn btn-success col-xs-4" data-backdrop="true" data-keyboard="false" data-toggle="modal" data-target="#horizontal-layout">수평 라벨 배열</button>
+                    <button type="button" class="btn btn-success col-xs-4" data-backdrop="true" data-keyboard="false" data-toggle="modal" data-target="#inline-layout">인라인 라벨 배열</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Dialog Start -->
+    <div class="modal fade " id="vertical-layout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <p style="float:right;margin-right:10px;">2014-04-23 10:23 AM</p>
+                    <h4 class="modal-title" id="myModalLabel">SK C&amp;C 하나SK카드</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="well">{홍길동}님은
+                        <span class="label label-info">{XXX}</span>
+                        쇼핑몰에서
+                        <span class="label label-info">{2,000,000}</span>원 간편결제요청을 하셨습니다
+                        <br>
+                        <small>다음 결제 방법을 선택하고 승인 정보를 입력하세요.</small>
+                    </div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs ">
+                        <li class="active">
+                            <a href="#sms-process" data-toggle="tab">간편결제</a>
+                        </li>
+                        <li>
+                            <a href="#app-process" data-toggle="tab">앱카드결제</a>
+                        </li>
+                        <li>
+                            <a href="#secure-process" data-toggle="tab">안심클릭결제</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="sms-process">...</div>
+                        <div class="tab-pane" id="app-process">...</div>
+                        <div class="tab-pane" id="secure-process">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.1.11.0.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Biz Logic -->
+    <script src="js/main.js"></script>
+    <!-- library -->
+    <script src="js/lib/jquery.countdown.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
