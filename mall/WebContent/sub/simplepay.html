@@ -1,0 +1,86 @@
+<div id="simple-basic-data">
+                        <div class="row">
+                            <div class="form-group col-xs-12" style="margin-bottom:5px">
+                                <div class="col-xs-2" style="">
+                                <label for="inputTel1" class="control-label">휴대폰번호</label>
+                                <select class="form-control" id="inputTel1">
+                                <option>010</option>
+                                <option>011</option>
+                                <option>016</option>
+                                <option>017</option>
+                                <option>018</option>
+                                <option>019</option>
+                                </select>
+                                </div>
+
+                                <div class="col-xs-3" style="padding-left:0px;">
+                                <label for="inputTel2" style="visibility:hidden" class="control-label">Phone</label>
+                                <input type="tel" class="form-control text-center" id="inputTel2" placeholder="1234" maxlength="4">
+                                </div>
+                                <div class="col-xs-3" style="padding-left:0px;">
+                                <label for="inputTel3" style="visibility:hidden" class="control-label">Phone</label>
+                                <input type="tel" class="form-control text-center" id="inputTel3" placeholder="9999" maxlength="4">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row" >
+                            <div class="form-group col-xs-8" style="margin-bottom:5px">
+                                <label for="sid2" class="control-label" >주민등록번호</label>
+                                <div class="input-group" >
+                                <span class="input-group-addon">&nbsp;YYMMDD&nbsp;</span>
+                                <input type="password" class="form-control" id="sid2" placeholder="XXXXXXX(7자리 숫자)">
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+                <div id="simple-reqPayment">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <label for="cardno" class="control-label" >카드번호</label>
+                        </div>
+                        <div class="col-xs-8">
+                        <div class="input-group">
+                        <input id="cardno" type="text" class="form-control" disabled value="1234-****-****-1234">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">&nbsp;선택&nbsp;&nbsp;<span class="caret"></span></button>
+                                <ul class="dropdown-menu pull-right">
+                                  <li><a href="#">1111-****-****2222</a></li>
+                                  <li><a href="#">3333-****-****4444</a></li>
+                                  <li><a href="#">5555-****-****6666</a></li>
+                                  <li><a href="#">7777-****-****8888</a></li>
+                                </ul>
+                            </div><!-- /btn-group -->
+                        </div>
+                        </div>
+          <!--row--></div>
+                    <div class="row" style="margin-top:4px;">
+                        <div class="col-xs-8">
+                            <label for="cardno" class="control-label" >카드비밀번호</label>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="col-xs-2">
+                            <input id="cardno" type="password" maxlength=2 class="form-control text-center" placeholder="**">
+                            </div>
+                            <div class="col-xs-4" style="margin-top:7px">** (앞2자리)</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="simple-smsauthcounter">
+                    <div class="row">
+                       <div id="progressing" class="col-xs-8 col-xs-offset-2 text-center">
+                           <p style="font-size:5em;"><span id="counter" class="label label-default" >02 : 00</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2">
+                            <div class="input-group " >
+                                <input type="num" class="form-control text-center" style="font-size:1.5em;" id="authcode" placeholder="인증번호">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" >&nbsp;재전송&nbsp;</button>
+                                    <button class="btn btn-default" >&nbsp;취 소&nbsp;</button></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
